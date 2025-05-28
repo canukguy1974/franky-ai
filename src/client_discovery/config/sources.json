@@ -1,0 +1,40 @@
+{
+  "directories": [
+    {
+      "name": "google_my_business",
+      "type": "google_my_business",
+      "locations": ["New York, NY", "San Francisco, CA"],
+      "categories": ["marketing", "web_design", "accounting"]
+    },
+    {
+      "name": "chamber_of_commerce",
+      "type": "industry_directory",
+      "url": "https://www.chamberofcommerce.com/directories",
+      "industry": "professional_services"
+    }
+  ],
+  "social_platforms": [
+    {
+      "name": "linkedin",
+      "search_terms": ["new business", "startup", "small business"],
+      "filters": {
+        "company_size": "1-50",
+        "founded_within_years": 2
+      }
+    },
+    {
+      "name": "twitter",
+      "search_terms": ["looking for recommendations", "need help with website", "small business advice"],
+      "filters": {
+        "post_recency_days": 7
+      }
+    }
+  ],
+  "forums": [
+    {
+      "name": "reddit",
+      "subreddits": ["smallbusiness", "entrepreneur", "webdev"],
+      "search_terms": ["recommendation", "looking for help", "advice needed"]
+    }
+  ]
+}

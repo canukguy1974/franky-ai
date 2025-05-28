@@ -1,0 +1,22 @@
+{
+  "templates": [
+    {
+      "template_id": "initial_contact_website_need",
+      "channel": "email",
+      "subject": "Idea to enhance {business_name}'s online presence",
+      "body": "Hi {decision_maker_name},\n\nI came across {business_name} and was impressed by your work in the {industry} space.\n\nWhile reviewing your website, I noticed an opportunity related to {identified_need}. We specialize in helping businesses like yours {benefit}.\n\nWould you be open to a brief chat next week to explore how we might be able to help {business_name} achieve {relevant_goal}?\n\nBest regards,\nAI Agent"
+    },
+    {
+      "template_id": "follow_up_1_no_response",
+      "channel": "email",
+      "subject": "Following up: {business_name}'s online presence",
+      "body": "Hi {decision_maker_name},\n\nI reached out last week about potentially helping {business_name} with {identified_need}.\n\nI understand you're likely busy, but I wanted to check if you had a chance to consider my suggestion about improving your {relevant_goal}.\n\nWould you have 15 minutes for a quick call this week?\n\nBest regards,\nAI Agent"
+    },
+    {
+      "template_id": "proposal_delivery",
+      "channel": "email",
+      "subject": "Proposal for {business_name}: {primary_service}",
+      "body": "Hi {decision_maker_name},\n\nThank you for our conversation about {business_name}'s needs regarding {identified_need}.\n\nI've attached a proposal outlining how we can help with {primary_service}. The proposal includes:\n\n- Scope of work\n- Timeline\n- Investment details\n- Expected outcomes\n\nPlease review at your convenience, and let me know if you have any questions.\n\nBest regards,\nAI Agent"
+    }
+  ]
+}

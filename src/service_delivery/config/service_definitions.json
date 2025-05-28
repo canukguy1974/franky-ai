@@ -1,0 +1,68 @@
+{
+  "services": [
+    {
+      "service_id": "blog_post_writing",
+      "name": "Blog Post Writing",
+      "description": "SEO-optimized blog posts tailored to your industry",
+      "category": "content_creation",
+      "execution_module": "content_generator",
+      "inputs": [
+        {"name": "topic", "type": "string", "required": true},
+        {"name": "keywords", "type": "array", "required": true},
+        {"name": "word_count", "type": "number", "default": 1000}
+      ],
+      "outputs": [
+        {"name": "markdown_content", "type": "file"},
+        {"name": "seo_report", "type": "file"}
+      ],
+      "qa_checks": ["grammar", "plagiarism", "keyword_density", "readability"],
+      "base_price": 150,
+      "price_factors": {
+        "word_count": {"unit": 500, "price": 50},
+        "research_depth": {"low": 0, "medium": 50, "high": 100}
+      }
+    },
+    {
+      "service_id": "social_media_content",
+      "name": "Social Media Content",
+      "description": "Engaging posts for multiple social platforms",
+      "category": "content_creation",
+      "execution_module": "content_generator",
+      "inputs": [
+        {"name": "platforms", "type": "array", "required": true},
+        {"name": "brand_voice", "type": "string", "required": true},
+        {"name": "post_count", "type": "number", "default": 10}
+      ],
+      "outputs": [
+        {"name": "content_package", "type": "file"}
+      ],
+      "qa_checks": ["brand_alignment", "engagement_potential"],
+      "base_price": 200,
+      "price_factors": {
+        "post_count": {"unit": 5, "price": 75},
+        "image_creation": {"included": 0, "basic": 100, "premium": 250}
+      }
+    },
+    {
+      "service_id": "website_audit",
+      "name": "Website Audit",
+      "description": "Comprehensive analysis of website performance and SEO",
+      "category": "data_analysis",
+      "execution_module": "data_analyzer",
+      "inputs": [
+        {"name": "website_url", "type": "string", "required": true},
+        {"name": "audit_depth", "type": "string", "default": "standard"}
+      ],
+      "outputs": [
+        {"name": "audit_report", "type": "file"},
+        {"name": "recommendations", "type": "file"}
+      ],
+      "qa_checks": ["data_accuracy", "actionability"],
+      "base_price": 300,
+      "price_factors": {
+        "audit_depth": {"basic": -100, "standard": 0, "comprehensive": 200},
+        "competitor_analysis": {"not_included": 0, "included": 150}
+      }
+    }
+  ]
+}
